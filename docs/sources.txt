@@ -1,0 +1,1 @@
+https://medium.com/@shamique/simple-chat-application-using-ionic-and-socket-io-82d9b4605cc3

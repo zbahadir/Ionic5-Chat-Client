@@ -1,27 +1,49 @@
-#container {
-  text-align: center;
+.toolbar-background {
+  background-color: #30adde;
+}
+.toolbar-title-md {
+  padding: 0 12px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.chat-message {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  margin: 10px;
+  max-width: 60%;
+  width: -webkit-fill-available;
 
+}
+.chat-message:before {
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  width: 9px;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: -7.5px;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.chat-message.right { 
+  background-color: #488aff;
+  color: #fff;
+  float: right;
+  width: -webkit-fill-available;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.chat-message.right:before {
+  background-color: #488aff;
+  right: 10px;
+  -webkit-transform: rotate(118deg) skew(-5deg);
+  transform: rotate(118deg) skew(-5deg);
 }
-
-#container a {
-  text-decoration: none;
+.chat-message.left {
+  background-color: #e6e5eb;
+  float: left;
+}
+.chat-message.left:before {
+  background-color: #e6e5eb;
+  left: 10px;
+  -webkit-transform: rotate(70deg) skew(5deg);
+  transform: rotate(70deg) skew(5deg);
 }
